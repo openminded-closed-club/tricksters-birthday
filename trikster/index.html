@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <!--link rel="icon" href="https://sdfestaticassets-eu-west-1.sciencedirectassets.com/shared-assets/18/images/favSD.ico" type="image/x-icon"-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Trikster's Birthday Party"
+    />
+    <link rel="stylesheet" href="styles.css">
+    <title>Trickster's Birthday Party</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="header-container">
+        <nav>
+          <a href="#" class="nav-up active">up</a>
+          <a href="#show" class="nav-link">show</a>
+          <a href="#inside" class="nav-link">inside</a>
+          <a href="#rules" class="nav-link">rules</a>
+          <a href="#club" class="nav-link">club</a>
+        </nav>
+        <a href="http://Instagram.com/meetmeintbilisi" class="inst">
+          <img src="./assets/instagram-logo.png" alt="instagram logo" />
+        </a>
+      </div>
+    </header>
+
+    <section class="section-first">
+      <div class="section-first-container">
+        <div>
+          <img class="club-logo" src="./assets/club-logo.png" alt="open minded closed club" />
+        </div>
+        <img class="party-logo" src="./assets/tricksters-logo.png" alt="trickster's party logo" />
+        <div class="section-first-text">
+          <div>12th November</div>
+          <div>Doors open: 9PM</div>
+          <div>Early bird: 150₾</div>
+        </div>
+        <a href="#club" class="button">Ready to go!</a>
+        <div>
+          <img src="./assets/arrow.svg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section-second" id="show">
+      <h2>We are gathering to celebrate and unleash our wilderness</h2>
+      <p class="grey">Let us remember our playful wild rebellious side — through magic, rituals, and dancing</p>
+      <p>Come and celebrate your darkness - we all have a dark side that needs to see the light</p>
+      <p>We will come together through dancing, performances, masquearade and sensual practices</p>
+      <p>Come as you are, all colors and forms are welcome - we are a friendly and safe space for all </p>
+      <p><a href="">Play by the rules</a>, and you’re welcome to express yourself as you wish</p>
+      <div>I drop till  01.11 - 150</div>
+      <div>II drop till 07.11 - 200 </div>
+      <div>III drop till 11.11 - 250</div>
+      <br /><br />
+      <a href="#club" class="button">Let me in</a>
+    </section>
+
+    <section class="section-third" id="inside">
+      <h2>What’s behind the door?</h2>
+      <ul>
+        <li>Queer-friendly safe and comfortable space </li>
+        <li>Immersive performances, rituals, tarot reading, magicians and illusionists</li>
+        <li>Separate areas for such activities as: flogging, shibari, sensorium and other sensual practices </li>
+        <li>Dancefloor with deep, sensual rhythms;</li>
+        <li>Make-up and beauty bar</li>
+        <li>Chillout area - a place where you can relax, lie down and cuddle, and drink delicious teas from our resident tea master</li>
+        <li>Light appetizers, low-alcohol bar (cash only) </li>
+      </ul>
+      <p>Dress code: <a href="https://pin.it/73xhlph">Circus / Fetish wear, or plain black clothes</a> (there will be a makeup bar available at the spot for a small fee)</p>
+      <p>(Note: While we encourage self-expression, please note there are some restrictions. We carefully screen our guest list through a closed referral system and will blacklist people for <a href="">violating the rules</a>)</p>
+      <p class="grey">Allow yourself to unleash your wild side!</p>
+      <a href="#club" class="button">Apply</a>
+    </section>
+
+    <section class="section-fourth" id="rules">
+      <h2>You must:</h2>
+      <p>
+        <a href="https://docs.google.com/forms/d/1dN7047air8N0sQZun7nEUDMhR6HKgjPeZaMgP_sLUmc/edit?chromeless=1">Fill in the questionnaire</a> and get approved <br />
+        After getting your approval, you can refer up to 3 people <br />
+        Be careful who you invite — if they mess up, you both will be blacklisted
+      </p>
+      <p><a href="https://pin.it/73xhlph">Wear a costume!</a> Check the moodboard to get the vibe</p>
+      <p>Ask for consent BEFORE any interaction</p>
+      <p>Do NOT use drugs before or during the party</p>
+      <p>NO sex. This is not a sex party</p>
+      <br /><br /><br /><br /><br />
+      <a href="#club" class="button">I understand</a>
+    </section>
+
+    <section class="section-fifth" id="club">
+      <div class="section-fifth-container">
+        <div>
+          <img src="./assets/closed-club.png" alt="open minded closed club" class="closed-club" />
+          <div class="section-fifth-text">
+            <p>Automatic approval <span class="grey">for all parties and practices;</span></p>
+            <p>Buy a tickets <span class="grey">on the day of the party on the spot;</span></p>
+            <p>Сlub discounts and promotions;</p>
+            <p>Private parties</p>
+          </div>
+        </div>
+        <div>
+          <a href="https://docs.google.com/forms/d/1dN7047air8N0sQZun7nEUDMhR6HKgjPeZaMgP_sLUmc/edit?chromeless=1" class="button">Join</a>
+        </div>
+      </div>
+    </section>
+
+  </body>
+  <script lang="javascript">
+    window.onload = (event) => {
+      const links = document.querySelectorAll('.nav-link')
+      const up = document.querySelector('.nav-up')
+
+      links.forEach((link) => {
+        link.addEventListener('click', () => {
+          links.forEach((link) => {link.classList.remove('active')})
+          up.classList.remove('active')
+          link.classList.add('active')
+        })
+      })
+
+      up.addEventListener('click', () =>{
+        links.forEach((link) => {link.classList.remove('active')})
+        up.classList.add('active')
+      })
+    };
+  </script>
+</html>
